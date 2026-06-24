@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>读懂一个人 · 人物分析馆(合集)</title>
 <style>
 
@@ -136,7 +133,6 @@
   .reveal{opacity:0;transform:translateY(20px);transition:.7s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:none}
 
 
-  /* merged-app overrides */
   .topbar{position:sticky;top:0;z-index:80;background:rgba(8,11,20,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .topbar .row1{display:flex;align-items:center;gap:12px;height:50px;max-width:1100px;margin:0 auto;padding:0 16px}
   .topbar .brand{font-weight:900;font-size:15px;color:var(--txt);cursor:pointer;white-space:nowrap;letter-spacing:1px}
@@ -156,7 +152,6 @@
   #home{display:none}#home.show{display:block}
   .person .hero{min-height:auto;padding:54px 22px 30px}
   .person section:first-of-type{border-top:none}
-  /* home */
   #home .cover{text-align:center;padding:60px 22px 26px;position:relative}
   #home .cover h1{font-size:clamp(32px,6vw,52px);font-weight:900;letter-spacing:2px;background:linear-gradient(120deg,#fff,#9ab8ff 55%,#ffcb47);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   #home .cover p{color:var(--muted);font-size:15.5px;max-width:680px;margin:14px auto 0}
@@ -172,40 +167,28 @@
   #home .card.c1::before{background:var(--pink)}#home .card.c2::before{background:var(--accent)}#home .card.c3::before{background:var(--purple)}#home .card.c4::before{background:var(--green)}#home .card.c5::before{background:var(--gold)}#home .card.c6::before{background:var(--red)}
   #home .card .nm{font-size:22px;font-weight:900}#home .card .yr{font-size:12px;color:var(--dim);margin:3px 0 11px}
   #home .card .ess{font-size:13.5px;color:var(--muted);min-height:40px}#home .card .go{margin-top:12px;font-size:12px;color:var(--accent);font-weight:700}
-  .backhome{display:block;max-width:1100px;margin:0 auto;padding:16px 22px 0}
-  .backhome button{background:var(--card);border:1px solid var(--line);color:var(--muted);font-size:12.5px;padding:6px 13px;border-radius:18px;cursor:pointer;font-family:inherit}
-  .backhome button:hover{color:var(--txt);border-color:var(--accent)}
 
-</style>
-</head>
+</style></head>
 <body class="lang-zh">
-
-<div class="topbar">
-  <div class="row1">
-    <span class="brand" onclick="showHome()"><span class="zh">读懂一个人</span><span class="en">Read a Life</span></span>
-    <span class="sp"></span>
-    <span class="langtog2"><button id="bEn" onclick="setLang('en')">EN</button><button id="bZh" class="on" onclick="setLang('zh')">中</button></span>
-  </div>
-  <div class="tabsbar"><div class="inner">
-    <span class="glabel"><span class="zh">中国</span><span class="en">CN</span></span><button class="ptab" id="tab-fan" onclick="showP('fan')"><span class="zh">范仲淹</span><span class="en">Fan Zhongyan</span></button><button class="ptab" id="tab-su" onclick="showP('su')"><span class="zh">苏轼</span><span class="en">Su Shi</span></button><button class="ptab" id="tab-wang" onclick="showP('wang')"><span class="zh">王阳明</span><span class="en">Wang Yangming</span></button><button class="ptab" id="tab-zeng" onclick="showP('zeng')"><span class="zh">曾国藩</span><span class="en">Zeng Guofan</span></button><button class="ptab" id="tab-mao" onclick="showP('mao')"><span class="zh">毛泽东</span><span class="en">Mao Zedong</span></button><button class="ptab" id="tab-deng" onclick="showP('deng')"><span class="zh">邓小平</span><span class="en">Deng Xiaoping</span></button>
-    <span class="glabel" style="margin-left:8px"><span class="zh">西方</span><span class="en">WEST</span></span><button class="ptab" id="tab-franklin" onclick="showP('franklin')"><span class="zh">富兰克林</span><span class="en">B. Franklin</span></button><button class="ptab" id="tab-lincoln" onclick="showP('lincoln')"><span class="zh">林肯</span><span class="en">A. Lincoln</span></button><button class="ptab" id="tab-einstein" onclick="showP('einstein')"><span class="zh">爱因斯坦</span><span class="en">A. Einstein</span></button><button class="ptab" id="tab-jobs" onclick="showP('jobs')"><span class="zh">乔布斯</span><span class="en">Steve Jobs</span></button><button class="ptab" id="tab-musk" onclick="showP('musk')"><span class="zh">马斯克</span><span class="en">Elon Musk</span></button>
-  </div></div>
+<div class="topbar"><div class="row1">
+<span class="brand" onclick="showHome()"><span class="zh">读懂一个人</span><span class="en">Read a Life</span></span>
+<span class="sp"></span>
+<span class="langtog2"><button id="bEn" onclick="setLang('en')">EN</button><button id="bZh" class="on" onclick="setLang('zh')">中</button></span>
 </div>
-
+<div class="tabsbar"><div class="inner">
+<span class="glabel"><span class="zh">中国</span><span class="en">CN</span></span><button class="ptab" id="tab-fan" onclick="showP('fan')"><span class="zh">范仲淹</span><span class="en">Fan Zhongyan</span></button><button class="ptab" id="tab-su" onclick="showP('su')"><span class="zh">苏轼</span><span class="en">Su Shi</span></button><button class="ptab" id="tab-wang" onclick="showP('wang')"><span class="zh">王阳明</span><span class="en">Wang Yangming</span></button><button class="ptab" id="tab-zeng" onclick="showP('zeng')"><span class="zh">曾国藩</span><span class="en">Zeng Guofan</span></button><button class="ptab" id="tab-mao" onclick="showP('mao')"><span class="zh">毛泽东</span><span class="en">Mao Zedong</span></button><button class="ptab" id="tab-deng" onclick="showP('deng')"><span class="zh">邓小平</span><span class="en">Deng Xiaoping</span></button>
+<span class="glabel" style="margin-left:8px"><span class="zh">西方</span><span class="en">WEST</span></span><button class="ptab" id="tab-franklin" onclick="showP('franklin')"><span class="zh">富兰克林</span><span class="en">B. Franklin</span></button><button class="ptab" id="tab-lincoln" onclick="showP('lincoln')"><span class="zh">林肯</span><span class="en">A. Lincoln</span></button><button class="ptab" id="tab-einstein" onclick="showP('einstein')"><span class="zh">爱因斯坦</span><span class="en">A. Einstein</span></button><button class="ptab" id="tab-jobs" onclick="showP('jobs')"><span class="zh">乔布斯</span><span class="en">Steve Jobs</span></button><button class="ptab" id="tab-musk" onclick="showP('musk')"><span class="zh">马斯克</span><span class="en">Elon Musk</span></button>
+</div></div></div>
 <div id="home" class="show">
-  <div class="cover">
-    <div class="stars"></div>
-    <h1><span class="zh">读懂一个人</span><span class="en">Read a Life</span></h1>
-    <p><span class="zh">了解一个人 → 看清他成功的“天人之际” → 拿走能为自己所用的东西。点上方标签或下方卡片,选谁看谁。右上角切换中/英。</span><span class="en">Understand a person → see the “Heaven &amp; Man” behind their success → take what you can use. Pick anyone from the tabs or cards above. Toggle 中/EN top-right.</span></p>
-    <div class="credo"><span class="zh">⟡ 天定起点,人定上限 ⟡</span><span class="en">⟡ Heaven sets the floor; you set the ceiling ⟡</span></div>
-  </div>
-  <div class="grouphd"><span class="zh">中国 · 先贤与领袖</span><span class="en">CHINA · Sages &amp; Leaders</span></div>
-  <div class="grid"><div class="card c1" onclick="showP('fan')"><div class="nm"><span class="zh">范仲淹</span><span class="en">Fan Zhongyan</span></div><div class="yr">989–1052</div><div class="ess"><span class="zh">“先天下之忧而忧”的完人标杆,文武政全才。</span><span class="en">Scholar, general, reformer—worry first, enjoy last.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c2" onclick="showP('su')"><div class="nm"><span class="zh">苏轼</span><span class="en">Su Shi</span></div><div class="yr">1037–1101</div><div class="ess"><span class="zh">把接连贬谪活成诗与旷达的千古全才。</span><span class="en">Turned exile after exile into poetry and serenity.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c3" onclick="showP('wang')"><div class="nm"><span class="zh">王阳明</span><span class="en">Wang Yangming</span></div><div class="yr">1472–1529</div><div class="ess"><span class="zh">“知行合一”的心学宗师,三不朽完人。</span><span class="en">Master of the unity of knowing and doing.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c4" onclick="showP('zeng')"><div class="nm"><span class="zh">曾国藩</span><span class="en">Zeng Guofan</span></div><div class="yr">1811–1872</div><div class="ess"><span class="zh">智商平平却靠“笨功夫”封圣的逆袭典范。</span><span class="en">An average man who ground his way to greatness.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c5" onclick="showP('mao')"><div class="nm"><span class="zh">毛泽东</span><span class="en">Mao Zedong</span></div><div class="yr">1893–1976</div><div class="ess"><span class="zh">缔造新中国、功过两极、最具争议的巨人。</span><span class="en">Founder of the PRC—consequential and contested.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c6" onclick="showP('deng')"><div class="nm"><span class="zh">邓小平</span><span class="en">Deng Xiaoping</span></div><div class="yr">1904–1997</div><div class="ess"><span class="zh">三落三起、“摸着石头过河”的改革总设计师。</span><span class="en">Three falls, three rises—the architect of Reform.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div></div>
-  <div class="grouphd"><span class="zh">西方 · 创新者与领袖</span><span class="en">THE WEST · Innovators &amp; Leaders</span></div>
-  <div class="grid"><div class="card c1" onclick="showP('franklin')"><div class="nm"><span class="zh">富兰克林</span><span class="en">B. Franklin</span></div><div class="yr">1706–1790</div><div class="ess"><span class="zh">自我塑造的“美国第一公民”,芒格的偶像。</span><span class="en">The self-made “First American”—Munger's idol.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c2" onclick="showP('lincoln')"><div class="nm"><span class="zh">林肯</span><span class="en">A. Lincoln</span></div><div class="yr">1809–1865</div><div class="ess"><span class="zh">自学成才、终结奴隶制的忧郁巨人。</span><span class="en">Self-taught; ended slavery—a melancholy giant.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c3" onclick="showP('einstein')"><div class="nm"><span class="zh">爱因斯坦</span><span class="en">A. Einstein</span></div><div class="yr">1879–1955</div><div class="ess"><span class="zh">用想象力改写时空、捍卫自由的物理学家。</span><span class="en">Rewrote space and time by imagination.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c4" onclick="showP('jobs')"><div class="nm"><span class="zh">乔布斯</span><span class="en">Steve Jobs</span></div><div class="yr">1955–2011</div><div class="ess"><span class="zh">站在科技与人文十字路口的完美主义者。</span><span class="en">A perfectionist at the crossroads of tech and arts.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c5" onclick="showP('musk')"><div class="nm"><span class="zh">马斯克</span><span class="en">Elon Musk</span></div><div class="yr">1971–</div><div class="ess"><span class="zh">拿全部身家赌使命的风险机器。</span><span class="en">A risk machine who bet everything on his mission.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div></div>
-  <div style="height:60px"></div>
+<div class="cover"><div class="stars"></div>
+<h1><span class="zh">读懂一个人</span><span class="en">Read a Life</span></h1>
+<p><span class="zh">了解一个人 → 看清他成功的“天人之际” → 拿走能为自己所用的东西。点上方标签或下方卡片,选谁看谁。右上角切换中/英。</span><span class="en">Understand a person → see the “Heaven &amp; Man” behind their success → take what you can use. Pick anyone from the tabs or cards. Toggle 中/EN top-right.</span></p>
+<div class="credo"><span class="zh">⟡ 天定起点,人定上限 ⟡</span><span class="en">⟡ Heaven sets the floor; you set the ceiling ⟡</span></div></div>
+<div class="grouphd"><span class="zh">中国 · 先贤与领袖</span><span class="en">CHINA · Sages &amp; Leaders</span></div>
+<div class="grid"><div class="card c1" onclick="showP('fan')"><div class="nm"><span class="zh">范仲淹</span><span class="en">Fan Zhongyan</span></div><div class="yr">989–1052</div><div class="ess"><span class="zh">“先天下之忧而忧”的完人标杆,文武政全才。</span><span class="en">Scholar, general, reformer—worry first, enjoy last.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c2" onclick="showP('su')"><div class="nm"><span class="zh">苏轼</span><span class="en">Su Shi</span></div><div class="yr">1037–1101</div><div class="ess"><span class="zh">把接连贬谪活成诗与旷达的千古全才。</span><span class="en">Turned exile after exile into poetry and serenity.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c3" onclick="showP('wang')"><div class="nm"><span class="zh">王阳明</span><span class="en">Wang Yangming</span></div><div class="yr">1472–1529</div><div class="ess"><span class="zh">“知行合一”的心学宗师,三不朽完人。</span><span class="en">Master of the unity of knowing and doing.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c4" onclick="showP('zeng')"><div class="nm"><span class="zh">曾国藩</span><span class="en">Zeng Guofan</span></div><div class="yr">1811–1872</div><div class="ess"><span class="zh">智商平平却靠“笨功夫”封圣的逆袭典范。</span><span class="en">An average man who ground his way to greatness.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c5" onclick="showP('mao')"><div class="nm"><span class="zh">毛泽东</span><span class="en">Mao Zedong</span></div><div class="yr">1893–1976</div><div class="ess"><span class="zh">缔造新中国、功过两极、最具争议的巨人。</span><span class="en">Founder of the PRC—consequential and contested.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c6" onclick="showP('deng')"><div class="nm"><span class="zh">邓小平</span><span class="en">Deng Xiaoping</span></div><div class="yr">1904–1997</div><div class="ess"><span class="zh">三落三起、“摸着石头过河”的改革总设计师。</span><span class="en">Three falls, three rises—the architect of Reform.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div></div>
+<div class="grouphd"><span class="zh">西方 · 创新者与领袖</span><span class="en">THE WEST · Innovators &amp; Leaders</span></div>
+<div class="grid"><div class="card c1" onclick="showP('franklin')"><div class="nm"><span class="zh">富兰克林</span><span class="en">B. Franklin</span></div><div class="yr">1706–1790</div><div class="ess"><span class="zh">自我塑造的“美国第一公民”,芒格的偶像。</span><span class="en">The self-made “First American”—Munger's idol.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c2" onclick="showP('lincoln')"><div class="nm"><span class="zh">林肯</span><span class="en">A. Lincoln</span></div><div class="yr">1809–1865</div><div class="ess"><span class="zh">自学成才、终结奴隶制的忧郁巨人。</span><span class="en">Self-taught; ended slavery—a melancholy giant.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c3" onclick="showP('einstein')"><div class="nm"><span class="zh">爱因斯坦</span><span class="en">A. Einstein</span></div><div class="yr">1879–1955</div><div class="ess"><span class="zh">用想象力改写时空、捍卫自由的物理学家。</span><span class="en">Rewrote space and time by imagination.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c4" onclick="showP('jobs')"><div class="nm"><span class="zh">乔布斯</span><span class="en">Steve Jobs</span></div><div class="yr">1955–2011</div><div class="ess"><span class="zh">站在科技与人文十字路口的完美主义者。</span><span class="en">A perfectionist at the crossroads of tech and arts.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div><div class="card c5" onclick="showP('musk')"><div class="nm"><span class="zh">马斯克</span><span class="en">Elon Musk</span></div><div class="yr">1971–</div><div class="ess"><span class="zh">拿全部身家赌使命的风险机器。</span><span class="en">A risk machine who bet everything on his mission.</span></div><div class="go"><span class="zh">查看 →</span><span class="en">Open →</span></div></div></div><div style="height:60px"></div>
 </div>
-
 <div class="person" id="person-fan"><header class="hero">
   <div class="stars"></div>
   <h1><span class="zh">范仲淹</span><span class="en">Fan Zhongyan</span></h1>
@@ -2375,48 +2358,43 @@
 <div class="person" id="person-musk"><header class="hero">
   <div class="stars"></div>
   <h1>Elon Musk</h1>
-  <div class="sup"><span class="en">埃隆·马斯克 · 1971–</span><span class="zh">ELON MUSK · 1971–</span></div>
+  <div class="sup"><span class="en">埃隆·马斯克</span><span class="zh">ELON MUSK · 1971–</span></div>
   <div class="essence">
     <div class="lab"><span class="en">⟡ IN ONE LINE</span><span class="zh">⟡ 一句话本质</span></div>
-    <p><span class="en">A risk machine that <b>runs on pain and bets everything on a mission</b>—where his greatest strength and his most dangerous flaw are two faces of the same coin.</span><span class="zh">一台<b>把痛苦当燃料、拿全部身家赌使命</b>的风险机器——他最伟大的优点和最危险的缺点,是同一枚硬币的两面。</span></p>
+    <p><span class="en">A risk machine who <b>turns pain into fuel and bets everything on the mission</b>—his greatest strengths and most dangerous flaws are two sides of one coin.</span><span class="zh">一台<b>把痛苦当燃料、拿全部身家赌使命</b>的风险机器——他最伟大的优点和最危险的缺点,是同一枚硬币的两面。</span></p>
   </div>
   <div class="scroll-tip"><span class="en">↓ scroll · toggle 中/EN top-right</span><span class="zh">↓ 向下滚动 · 右上角切换 中/EN</span></div>
 </header>
 
-<!-- 他是谁 -->
+<!-- WHO -->
 <section id="who"><div class="wrap reveal">
   <div class="kicker">PART 1</div>
   <h2 class="sec"><span class="en">Who He Is</span><span class="zh">他是谁</span></h2>
-
   <div class="intro">
-    <span class="en">Born 1971 in South Africa, the son of an engineer. He made his first fortune on the early internet, then bet almost his entire net worth on the hard tech nobody dared touch—<b>SpaceX and Tesla</b>. By 2021 he was the world's richest person, having rewritten spaceflight, electric cars, energy, and social media all at once. A man who burns <b>mission, risk, and pain</b> as fuel.</span>
-    <span class="zh">1971 年生于南非的工程师之子。靠互联网创业掘到第一桶金,之后几乎押上全部身家做了别人不敢碰的硬科技——<b>SpaceX、特斯拉</b>。2021 年成为世界首富,同时改写了航天、电动车、能源、社交媒体多个行业。一个把<b>使命、风险与痛苦</b>当燃料的人。</span>
+    <span class="en">Born 1971 to an engineer father in South Africa. After making his first fortune on the internet, he bet nearly everything on the hard tech no one else would touch—<b>SpaceX and Tesla</b>. Became the world's richest person in 2021, and reshaped cars, spaceflight, energy and social media at once. A man who runs on <b>mission, risk and pain</b>.</span>
+    <span class="zh">1971 年生于南非,父亲是工程师。靠互联网掘到第一桶金后,他几乎押上全部身家去做别人不敢碰的硬科技——<b>SpaceX 和特斯拉</b>。2021 年成为世界首富,同时改写了汽车、航天、能源与社交媒体。一个把<b>使命、风险与痛苦</b>当燃料的人。</span>
     <div class="tags">
       <span class="en"># World's richest</span><span class="zh"># 世界首富</span>
       <span class="en"># Mars dreamer</span><span class="zh"># 火星梦想家</span>
-      <span class="en"># Silicon Valley maverick</span><span class="zh"># 硅谷狂人</span>
-      <span class="en"># Workaholic</span><span class="zh"># 工作狂</span>
       <span class="en"># First principles</span><span class="zh"># 第一性原理</span>
-      <span class="en"># Reality Distortion Field</span><span class="zh"># 现实扭曲力场</span>
-      <span class="en"># Owner of X/Twitter</span><span class="zh"># 推特之主</span>
-      <span class="en"># Controversy machine</span><span class="zh"># 争议制造机</span>
+      <span class="en"># Reality distortion</span><span class="zh"># 现实扭曲力场</span>
+      <span class="en"># Workaholic</span><span class="zh"># 工作狂</span>
+      <span class="en"># Controversy magnet</span><span class="zh"># 争议制造机</span>
     </div>
   </div>
 
-  <!-- 性格分析 -->
   <div class="blk">
     <div class="bh"><span class="n">A</span><b><span class="en">Personality</span><span class="zh">性格分析</span></b></div>
-
     <div style="margin-bottom:18px">
       <div class="o2"><span class="en">① Big Five (scientific)</span><span class="zh">① 大五人格(科学量表)</span></div>
       <div class="pf">
         <div class="radarbox"><h4><span class="en">Big Five (illustrative, from the biography)</span><span class="zh">大五雷达(基于传记的示意)</span></h4><svg id="radar-musk" viewBox="0 0 320 300" width="100%"></svg></div>
         <div class="reads">
           <div class="r"><b><span class="en">Openness</span><span class="zh">开放性</span></b><span class="v">98</span><p><span class="en">Sci-fi, cross-disciplinary, obsessed with the future—a born visionary and risk-taker.</span><span class="zh">科幻、跨学科、对未来痴迷;天生的远见者与冒险家。</span></p></div>
-          <div class="r"><b><span class="en">Conscientiousness (achievement)</span><span class="zh">尽责性(成就面)</span></b><span class="v">82</span><p><span class="en">Workaholic, relentless on goals—but low on order; "driven", not "tidy".</span><span class="zh">工作狂、死磕目标;但条理性低——是"拼命"而非"井井有条"。</span></p></div>
-          <div class="r"><b><span class="en">Extraversion</span><span class="zh">外向性</span></b><span class="v">55</span><p><span class="en">Socially awkward, yet intensely self-assured and drawn to the stage and spotlight.</span><span class="zh">社交笨拙,却极度自信、爱舞台与聚光灯。</span></p></div>
-          <div class="r lo"><b><span class="en">Agreeableness</span><span class="zh">宜人性</span></b><span class="v">15</span><p><span class="en">Low empathy, combative; his harshness toward people is his biggest cost.</span><span class="zh">共情缺失、好斗;对人苛刻是他最大代价。</span></p></div>
-          <div class="r lo"><b><span class="en">Neuroticism</span><span class="zh">神经质</span></b><span class="v">80</span><p><span class="en">Mood swings violently between light and dark; high-strung, quick to anger, turbulent inside.</span><span class="zh">情绪在明暗间剧烈摆动,高压易怒,内心动荡。</span></p></div>
+          <div class="r"><b><span class="en">Conscientiousness</span><span class="zh">尽责性(成就面)</span></b><span class="v">82</span><p><span class="en">A workaholic who grinds on goals—but chaotic and impulsive, not orderly.</span><span class="zh">工作狂、死磕目标;但条理性低、混乱冲动——是"拼命"而非"井井有条"。</span></p></div>
+          <div class="r"><b><span class="en">Extraversion</span><span class="zh">外向性</span></b><span class="v">55</span><p><span class="en">Socially awkward (self-described Asperger's), yet hugely confident and loves the spotlight.</span><span class="zh">社交笨拙(自认阿斯伯格),却极度自信、爱舞台与聚光灯。</span></p></div>
+          <div class="r lo"><b><span class="en">Agreeableness</span><span class="zh">宜人性</span></b><span class="v">15</span><p><span class="en">Empathy deficit, combative, "demon mode"—harshness is his biggest cost.</span><span class="zh">共情缺失、好斗、"恶魔模式";对人苛刻是他最大代价。</span></p></div>
+          <div class="r lo"><b><span class="en">Neuroticism</span><span class="zh">神经质</span></b><span class="v">80</span><p><span class="en">Moods swing wildly between light and dark; high-strung and volatile.</span><span class="zh">情绪在明暗间剧烈摆动,高压易怒,内心动荡。</span></p></div>
         </div>
       </div>
     </div>
@@ -2424,214 +2402,185 @@
     <div style="margin-bottom:18px">
       <div class="o2"><span class="en">② MBTI (popular reference)</span><span class="zh">② MBTI(流行参考)</span></div>
       <div class="mbti">
-        <div class="code">INTJ<small><span class="en">The Architect</span><span class="zh">建筑师 / 策划者</span></small></div>
-        <div class="ex">
-          <b><span class="en">Introverted · Intuitive · Thinking · Judging</span><span class="zh">内向(I)· 直觉(N)· 思考(T)· 判断(J)</span></b><span class="en"> — the classic profile: strategic vision, independent, exacting standards, goal-driven, indifferent to social convention. Fits his "reasoning back from a grand blueprint, cold toward people" perfectly.</span><span class="zh">——典型画像:战略远见、独立、高标准、目标导向、不在意社交常规。和他"用宏大蓝图倒推、对人冷峻"高度吻合。</span>
-          <div class="letters"><span class="en">I draws energy inward</span><span class="zh">I 向内汲取能量</span><span class="en">N sees the big picture</span><span class="zh">N 看大局与未来</span><span class="en">T logic over feeling</span><span class="zh">T 凭逻辑而非情感</span><span class="en">J plan & control</span><span class="zh">J 计划与掌控</span></div>
-        </div>
+        <div class="code">INTJ<small><span class="en">The Mastermind</span><span class="zh">建筑师 / 谋略家</span></small></div>
+        <div class="ex"><span class="en"><b>Introverted · Intuitive · Thinking · Judging</b> — a strategic visionary who reshapes reality by a grand plan and iron will, cool toward people. Fits him closely.</span><span class="zh"><b>内向·直觉·思考·判断</b>——以宏大蓝图和钢铁意志重塑现实的战略家,对人冷峻。与他高度吻合。</span></div>
       </div>
-      <p class="o2" style="margin:8px 0 0;font-size:12.5px;color:var(--dim);font-weight:400"><span class="en">Note: MBTI is popular and intuitive but far less reliable than the Big Five (low test-retest); for flavor only.</span><span class="zh">注:MBTI 流行好懂,但科学性远不如大五(重测信度低),此处仅作通俗参考。</span></p>
+      <p class="o2" style="margin:8px 0 0;font-size:12.5px;color:var(--dim);font-weight:400"><span class="en">Note: MBTI is popular but far less reliable than the Big Five; for flavor only.</span><span class="zh">注:MBTI 流行但科学性远不如大五,仅作通俗参考。</span></p>
     </div>
 
     <div>
       <div class="o2"><span class="en">③ Beyond the tests</span><span class="zh">③ 其他</span></div>
-      <p class="sub" style="margin-bottom:12px;font-size:13.5px"><span class="en">His defining trait is that strength and flaw are often <b style="color:var(--gold)">two sides of one coin</b>—something no scale can capture:</span><span class="zh">他最关键的特征,是优点与缺点常常是<b style="color:var(--gold)">同一枚硬币的两面</b>——这点量表测不出来:</span></p>
+      <p class="o2" style="margin-bottom:12px;font-size:13.5px;color:var(--muted);font-weight:400"><span class="en">His key trait: strengths and flaws are <b style="color:var(--gold)">two sides of one coin</b>—something the tests can't measure:</span><span class="zh">他最关键的特征,是优点与缺点常常是<b style="color:var(--gold)">同一枚硬币的两面</b>——这点量表测不出来:</span></p>
       <div class="coin">
-        <div class="coinc"><span class="g"><span class="en">Iron resilience</span><span class="zh">钢铁韧性</span></span><span class="ar">⇄</span><span class="b"><span class="en">Reckless self-harm</span><span class="zh">鲁莽自伤</span></span><span class="en"> · one "risk addiction"</span><span class="zh"> · 同一种"对风险上瘾"</span></div>
-        <div class="coinc"><span class="g"><span class="en">Total focus</span><span class="zh">极致专注</span></span><span class="ar">⇄</span><span class="b"><span class="en">Neglects those near him</span><span class="zh">忽视身边人</span></span><span class="en"> · one "block out everything"</span><span class="zh"> · 同一种"屏蔽一切"</span></div>
-        <div class="coinc"><span class="g"><span class="en">Visionary</span><span class="zh">远见愿景</span></span><span class="ar">⇄</span><span class="b"><span class="en">Overpromise & slip</span><span class="zh">夸大跳票</span></span><span class="en"> · one "reality distortion field"</span><span class="zh"> · 同一种"现实扭曲力场"</span></div>
-        <div class="coinc"><span class="g"><span class="en">Sky-high standards</span><span class="zh">极高标准</span></span><span class="ar">⇄</span><span class="b"><span class="en">Cold-blooded</span><span class="zh">冷酷无情</span></span><span class="en"> · one "empathy deficit"</span><span class="zh"> · 同一种"共情缺失"</span></div>
+        <div class="coinc"><span class="g"><span class="en">Iron resilience</span><span class="zh">钢铁韧性</span></span><span class="ar">⇄</span><span class="b"><span class="en">Reckless self-harm</span><span class="zh">鲁莽自伤</span></span></div>
+        <div class="coinc"><span class="g"><span class="en">Extreme focus</span><span class="zh">极致专注</span></span><span class="ar">⇄</span><span class="b"><span class="en">Neglects those near him</span><span class="zh">忽视身边人</span></span></div>
+        <div class="coinc"><span class="g"><span class="en">Grand vision</span><span class="zh">远见愿景</span></span><span class="ar">⇄</span><span class="b"><span class="en">Hype &amp; missed deadlines</span><span class="zh">夸大跳票</span></span></div>
+        <div class="coinc"><span class="g"><span class="en">Sky-high standards</span><span class="zh">极高标准</span></span><span class="ar">⇄</span><span class="b"><span class="en">Cold ruthlessness</span><span class="zh">冷酷无情</span></span></div>
       </div>
       <div class="xtra">
-        <div><b><span class="en">Asperger's traits</span><span class="zh">阿斯伯格特质</span></b><span class="en"> — self-described; brings extreme focus and social difficulty alike</span><span class="zh">——他自认有,带来超常专注,也带来社交障碍</span></div>
-        <div><b><span class="en">Mission-driven</span><span class="zh">使命驱动</span></b><span class="en"> — acts not for profit but for a grand "save humanity" narrative</span><span class="zh">——行为逻辑不靠利益,靠"拯救人类"的宏大叙事</span></div>
-        <div><b><span class="en">Allergic to contentment</span><span class="zh">满足感厌恶</span></b><span class="en"> — calm makes him anxious; he keeps raising his own stakes</span><span class="zh">——一旦安稳就焦虑,必须不断给自己加码</span></div>
+        <div><b><span class="en">Asperger's traits</span><span class="zh">阿斯伯格特质</span></b><span class="en"> — self-described; fuels focus and social difficulty alike</span><span class="zh"> — 他自认有,带来超常专注,也带来社交障碍</span></div>
+        <div><b><span class="en">Mission-driven</span><span class="zh">使命驱动</span></b><span class="en"> — logic runs on "saving humanity", not profit</span><span class="zh"> — 行为逻辑不靠利益,靠"拯救人类"的宏大叙事</span></div>
+        <div><b><span class="en">Contentment aversion</span><span class="zh">满足感厌恶</span></b><span class="en"> — calm makes him anxious; he keeps raising the stakes</span><span class="zh"> — 一旦安稳就焦虑,必须不断给自己加码</span></div>
       </div>
     </div>
   </div>
 
-  <!-- 核心动机 -->
   <div class="blk">
-    <div class="bh"><span class="n">B</span><b><span class="en">Core Drives & Fears</span><span class="zh">核心动机和恐惧</span></b></div>
+    <div class="bh"><span class="n">B</span><b><span class="en">Core Drives &amp; Fears</span><span class="zh">核心动机和恐惧</span></b></div>
     <div class="cards2">
-      <div class="c dr"><h5><span class="en">▲ What drove him</span><span class="zh">▲ 驱动他的</span></h5><p><span class="en">An overriding sense of mission: make humanity multi-planetary, accelerate sustainable energy. Plus a need to "prove himself" against a childhood shadow. Money is only a means.</span><span class="zh">压倒一切的使命感:让人类成为多星球物种、加速可持续能源。还有向童年阴影"证明自己"的执念。钱只是手段。</span></p></div>
-      <div class="c fr"><h5><span class="en">▼ What he feared</span><span class="zh">▼ 他害怕的</span></h5><p><span class="en">Becoming his father; the end of civilization and runaway AI; mediocrity and stagnation. Fear, in turn, becomes fuel.</span><span class="zh">怕"变成自己的父亲";怕人类文明终结、AI 失控;怕平庸与停滞。恐惧反过来变成燃料。</span></p></div>
+      <div class="c dr"><h5><span class="en">▲ What drives him</span><span class="zh">▲ 驱动他的</span></h5><p><span class="en">An overriding sense of mission: make humanity multiplanetary, accelerate sustainable energy—plus a drive to "prove himself" against a childhood shadow. Money is only a means.</span><span class="zh">压倒一切的使命感:让人类成为多星球物种、加速可持续能源;还有向童年阴影"证明自己"的执念。钱只是手段。</span></p></div>
+      <div class="c fr"><h5><span class="en">▼ What he fears</span><span class="zh">▼ 他害怕的</span></h5><p><span class="en">Becoming his father; the end of human civilization and unaligned AI; mediocrity and stagnation. Fear turns into fuel.</span><span class="zh">怕"变成自己的父亲";怕人类文明终结、AI 失控;怕平庸与停滞。恐惧反过来变成燃料。</span></p></div>
     </div>
   </div>
 
-  <!-- 自己眼中的自己 -->
   <div class="blk">
-    <div class="bh"><span class="n">C</span><b><span class="en">How He Saw Himself</span><span class="zh">自己眼中的自己</span></b></div>
+    <div class="bh"><span class="n">C</span><b><span class="en">How He Sees Himself</span><span class="zh">自己眼中的自己</span></b></div>
     <div class="self">
-      <p><span class="en">He sees himself as <b>a misunderstood, rational engineer carrying the burden of saving humanity</b>—thinking on a scale others can't see, forced to fight for the future. He also has a clear-eyed side: after repeatedly shooting himself in the foot, he joked <b>"I should buy a pair of bulletproof boots,"</b> admitting his own impulsiveness. He believes he has Asperger's and is bad with people, yet is convinced his mission "can only be done by me."</span><span class="zh">他把自己看作一个<b>背负拯救人类使命、被误解的理性工程师</b>——在常人看不到的尺度上思考问题,为了未来不得不去战斗。同时他也有清醒的一面:在一次次"搬石头砸自己脚"之后,他自嘲<b>"我真该买双防弹靴"</b>,承认自己冲动。一边自认有阿斯伯格、不善与人相处,一边坚信自己肩负的事"非我不可"。</span></p>
+      <p><span class="en">He sees himself as <b>a misunderstood, rational engineer carrying the burden of saving humanity</b>—thinking on a scale others can't see. He also has a self-aware streak: after repeatedly hurting his own cause, he joked that he "<b>should buy some Kevlar boots</b>" for shooting himself in the foot. He both claims Asperger's and frames himself as a man on an indispensable mission.</span><span class="zh">他把自己看作一个<b>背负拯救人类使命、被误解的理性工程师</b>——在常人看不到的尺度上思考。他也有清醒的一面:一次次"搬石头砸自己脚"后,他自嘲<b>"我真该买双防弹靴"</b>。一边自认有阿斯伯格,一边坚信自己肩负的事"非我不可"。</span></p>
     </div>
   </div>
 </div></section>
 
-<!-- 生平 -->
+<!-- LIFE -->
 <section id="life"><div class="wrap reveal">
   <div class="kicker">PART 2</div>
   <h2 class="sec"><span class="en">Life</span><span class="zh">生平</span></h2>
   <div class="arc">
     <div style="background:#ff8fab"><span class="en">Hard childhood 1971–89</span><span class="zh">苦难童年 1971–89</span></div>
-    <div style="background:#5b8cff"><span class="en">Internet gold 1989–01</span><span class="zh">创业掘金 1989–01</span></div>
-    <div style="background:#b388ff"><span class="en">Betting on hardware 2002–07</span><span class="zh">豪赌实业 2002–07</span></div>
+    <div style="background:#5b8cff"><span class="en">Internet fortune 1989–01</span><span class="zh">创业掘金 1989–01</span></div>
+    <div style="background:#b388ff"><span class="en">All-in on hard tech 2002–07</span><span class="zh">豪赌实业 2002–07</span></div>
     <div style="background:#ff7a7a"><span class="en">Darkest hours 2008 / 2018</span><span class="zh">至暗时刻 2008 / 2018</span></div>
     <div style="background:#ffcb47"><span class="en">To the summit 2010–23</span><span class="zh">登顶封神 2010–23</span></div>
   </div>
   <div class="tl">
-    <div class="ev"><div class="yr">1971</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Born in South Africa · a bullied childhood</span><span class="zh">生于南非 · 被霸凌的童年</span></div><div class="d"><span class="en">A harsh father and schoolyard violence; books and fantasy became his refuge. The undertone of pain was set early.</span><span class="zh">严苛的父亲、校园暴力,把读书与幻想当避难所。痛苦底色就此打下。</span></div></div></div>
-    <div class="ev big"><div class="yr">1989</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Leaves for Canada at 17</span><span class="zh">17岁独闯加拿大</span></div><div class="d"><span class="en">Fleeing his father and a future he couldn't see.</span><span class="zh">逃离父亲与看不到未来的环境。</span></div></div></div>
-    <div class="ev"><div class="yr">1995</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Quits a Stanford PhD after two days</span><span class="zh">斯坦福读博两天即退学</span></div><div class="d"><span class="en">Catches the internet wave; founds Zip2.</span><span class="zh">踩中互联网浪潮,创办 Zip2。</span></div></div></div>
-    <div class="ev big"><div class="yr">2002</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Cashes out of PayPal + founds SpaceX</span><span class="zh">PayPal套现 + 创办SpaceX</span></div><div class="d"><span class="en">Pours nearly his whole fortune into rockets and electric cars.</span><span class="zh">把几乎全部身家押进火箭与电动车。</span></div></div></div>
-    <div class="ev big"><div class="yr">2008</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Darkest year—then resurrection</span><span class="zh">至暗之年,又起死回生</span></div><div class="d"><span class="en">Three rocket failures, two companies near bankruptcy, divorce, the financial crisis. Then the 4th launch succeeds + a NASA contract saves the day.</span><span class="zh">火箭三连炸、两公司濒破产、离婚、金融危机。第四次发射成功 + NASA合同救场。</span></div></div></div>
-    <div class="ev"><div class="yr">2012</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Model S + Dragon docks with the ISS</span><span class="zh">Model S + 龙飞船对接空间站</span></div><div class="d"><span class="en">Both lifelines pull onto the right track at once.</span><span class="zh">两条命脉同时驶上正轨。</span></div></div></div>
-    <div class="ev"><div class="yr">2018</div><div class="dot"></div><div class="body"><div class="t"><span class="en">"Production hell" + public meltdown</span><span class="zh">"生产地狱" + 公开失控</span></div><div class="d"><span class="en">Sleeping at the factory to ramp Model 3; meanwhile mired in impulsive-tweet scandals.</span><span class="zh">睡工厂量产Model 3;同时深陷冲动推文风波。</span></div></div></div>
-    <div class="ev big"><div class="yr">2020</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Human spaceflight + Tesla on top</span><span class="zh">载人航天 + 市值登顶</span></div><div class="d"><span class="en">Sends astronauts to orbit; Tesla becomes the world's most valuable automaker.</span><span class="zh">把宇航员送上太空;特斯拉成全球最值钱车企。</span></div></div></div>
-    <div class="ev big"><div class="yr">2021</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Becomes the world's richest person</span><span class="zh">成为世界首富</span></div><div class="d"><span class="en">Net worth briefly tops $300 billion.</span><span class="zh">身家一度超3000亿美元。</span></div></div></div>
-    <div class="ev"><div class="yr">2022</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Buys Twitter for $44 billion</span><span class="zh">440亿美元收购推特</span></div><div class="d"><span class="en">Engulfed in controversy—his impulsive side, magnified once more.</span><span class="zh">争议缠身——冲动一面的又一次放大。</span></div></div></div>
-    <div class="ev big"><div class="yr">2023</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Starship's first flight · enters AI (xAI)</span><span class="zh">星舰首飞 · 杀入AI(xAI)</span></div><div class="d"><span class="en">Humanity's largest rocket lifts off; the biography closes here.</span><span class="zh">人类最大火箭升空;传记在此收尾。</span></div></div></div>
+    <div class="ev"><div class="yr">1971</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Born in South Africa · a bullied childhood</span><span class="zh">生于南非 · 被霸凌的童年</span></div><div class="d"><span class="en">A harsh father and schoolyard violence; books and daydreams as refuge.</span><span class="zh">严苛的父亲、校园暴力,把读书与幻想当避难所。</span></div></div></div>
+    <div class="ev big"><div class="yr">1989</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Leaves South Africa alone at 17</span><span class="zh">17岁独闯加拿大</span></div><div class="d"><span class="en">Escapes his father and a future he couldn't see.</span><span class="zh">逃离父亲与看不到未来的环境。</span></div></div></div>
+    <div class="ev"><div class="yr">1995</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Quits a Stanford PhD after two days</span><span class="zh">斯坦福读博两天即退学</span></div><div class="d"><span class="en">Rides the internet wave; founds Zip2.</span><span class="zh">踩中互联网浪潮,创办 Zip2。</span></div></div></div>
+    <div class="ev big"><div class="yr">2002</div><div class="dot"></div><div class="body"><div class="t"><span class="en">PayPal windfall + founds SpaceX</span><span class="zh">PayPal套现 + 创办SpaceX</span></div><div class="d"><span class="en">Pours nearly his whole fortune into rockets and electric cars.</span><span class="zh">把几乎全部身家押进火箭与电动车。</span></div></div></div>
+    <div class="ev big"><div class="yr">2008</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Darkest year, then resurrection</span><span class="zh">至暗之年,又起死回生</span></div><div class="d"><span class="en">Three rocket failures, both firms near death, divorce, the financial crisis—then Falcon 1's 4th flight reaches orbit and a NASA contract saves SpaceX.</span><span class="zh">火箭三连炸、两公司濒破产、离婚、金融危机。第四次发射成功 + NASA合同救场。</span></div></div></div>
+    <div class="ev"><div class="yr">2012</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Model S + Dragon docks at the ISS</span><span class="zh">Model S + 龙飞船对接空间站</span></div><div class="d"><span class="en">Both lifelines finally on track.</span><span class="zh">两条命脉同时驶上正轨。</span></div></div></div>
+    <div class="ev"><div class="yr">2018</div><div class="dot"></div><div class="body"><div class="t"><span class="en">"Production hell" + public meltdown</span><span class="zh">"生产地狱" + 公开失控</span></div><div class="d"><span class="en">Sleeping at the factory for the Model 3, while impulsive tweets blow up.</span><span class="zh">睡工厂量产Model 3;同时深陷冲动推文风波。</span></div></div></div>
+    <div class="ev big"><div class="yr">2020</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Crewed spaceflight + market peak</span><span class="zh">载人航天 + 市值登顶</span></div><div class="d"><span class="en">SpaceX flies astronauts; Tesla becomes the world's most valuable carmaker.</span><span class="zh">把宇航员送上太空;特斯拉成全球最值钱车企。</span></div></div></div>
+    <div class="ev big"><div class="yr">2021</div><div class="dot"></div><div class="body"><div class="t"><span class="en">World's richest person</span><span class="zh">成为世界首富</span></div><div class="d"><span class="en">Net worth briefly tops $300 billion.</span><span class="zh">身家一度超3000亿美元。</span></div></div></div>
+    <div class="ev"><div class="yr">2022</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Buys Twitter for $44B</span><span class="zh">440亿美元收购推特</span></div><div class="d"><span class="en">Engulfed in controversy—impulsiveness writ large.</span><span class="zh">争议缠身——冲动一面的又一次放大。</span></div></div></div>
+    <div class="ev big"><div class="yr">2023</div><div class="dot"></div><div class="body"><div class="t"><span class="en">Starship's first flight · enters AI (xAI)</span><span class="zh">星舰首飞 · 杀入AI(xAI)</span></div><div class="d"><span class="en">The biggest rocket ever flies; the biography ends here.</span><span class="zh">人类最大火箭升空;传记在此收尾。</span></div></div></div>
   </div>
 
   <h3 class="o2" style="color:var(--gold);font-size:16px;margin-top:26px">▌<span class="en">Key Decisions Reviewed</span><span class="zh">关键决策复盘</span></h3>
   <div class="dec">
-    <div class="decc"><div class="yr">1989</div><h5><span class="en">Leaving South Africa alone at 17</span><span class="zh">17岁,独自离开南非</span></h5>
-      <div class="row"><b><span class="en">SITUATION</span><span class="zh">处境</span></b><p><span class="en">Bullied, a high-pressure father, looming conscription, a country in turmoil.</span><span class="zh">被霸凌、父亲高压、面临兵役、国家动荡。</span></p></div>
-      <div class="row"><b><span class="en">HIS CHOICE</span><span class="zh">他的选择</span></b><p><span class="en">Didn't wait—went to Canada alone, then worked his way into the US.</span><span class="zh">不等不靠,一个人先去加拿大,再设法进美国。</span></p></div>
-      <div class="row norm"><b><span class="en">MOST WOULD</span><span class="zh">常人会</span></b><p><span class="en">Blame circumstances, wait for the timing, drift along with family.</span><span class="zh">抱怨环境、等条件成熟、跟家里耗着。</span></p></div>
+    <div class="decc"><div class="yr">1989</div><h5><span class="en">Leaving South Africa at 17</span><span class="zh">17岁,独自离开南非</span></h5>
+      <div class="row"><b><span class="en">SITUATION</span><span class="zh">处境</span></b><p><span class="en">Bullied, under a harsh father, facing conscription, a turbulent country.</span><span class="zh">被霸凌、父亲高压、面临兵役、国家动荡。</span></p></div>
+      <div class="row"><b><span class="en">HIS CHOICE</span><span class="zh">他的选择</span></b><p><span class="en">Didn't wait—went to Canada alone, then made his way to the U.S.</span><span class="zh">不等不靠,一个人先去加拿大,再设法进美国。</span></p></div>
+      <div class="row norm"><b><span class="en">MOST WOULD</span><span class="zh">常人会</span></b><p><span class="en">Complain, wait for the "right time", stay put.</span><span class="zh">抱怨环境、等条件成熟、跟家里耗着。</span></p></div>
     </div>
-    <div class="decc"><div class="yr">2008</div><h5><span class="en">Betting his last dollars</span><span class="zh">把最后的钱押上去</span></h5>
-      <div class="row"><b><span class="en">SITUATION</span><span class="zh">处境</span></b><p><span class="en">Two companies dying at once; only enough cash to save one.</span><span class="zh">两家公司同时濒死,钱只够救一家。</span></p></div>
-      <div class="row"><b><span class="en">HIS CHOICE</span><span class="zh">他的选择</span></b><p><span class="en">Split the money across both, bet on a 4th launch—borrowed for rent rather than quit.</span><span class="zh">分钱给两家、赌第四次发射,自己借钱付房租也不放弃。</span></p></div>
+    <div class="decc"><div class="yr">2008</div><h5><span class="en">Betting his last dollar</span><span class="zh">把最后的钱押上去</span></h5>
+      <div class="row"><b><span class="en">SITUATION</span><span class="zh">处境</span></b><p><span class="en">Both companies dying; only enough money to save one.</span><span class="zh">两家公司同时濒死,钱只够救一家。</span></p></div>
+      <div class="row"><b><span class="en">HIS CHOICE</span><span class="zh">他的选择</span></b><p><span class="en">Split the money across both, bet on the 4th launch, borrowed for rent rather than quit.</span><span class="zh">分钱给两家、赌第四次发射,自己借钱付房租也不放弃。</span></p></div>
       <div class="row norm"><b><span class="en">MOST WOULD</span><span class="zh">常人会</span></b><p><span class="en">Save one, cut losses, declare defeat.</span><span class="zh">保住一家、止损离场、宣告失败。</span></p></div>
     </div>
-    <div class="decc"><div class="yr">2022</div><h5><span class="en">The impulsive Twitter buy</span><span class="zh">冲动收购推特</span></h5>
-      <div class="row"><b><span class="en">SITUATION</span><span class="zh">处境</span></b><p><span class="en">An offer made on a whim; he tried to back out and was forced to close.</span><span class="zh">一时兴起报价,后想反悔被迫成交。</span></p></div>
-      <div class="row"><b><span class="en">HIS CHOICE</span><span class="zh">他的选择</span></b><p><span class="en">Ate the $44B, slashed staff—a textbook "impulse + hardcore" combo.</span><span class="zh">硬扛440亿、大刀裁员——典型"冲动+硬核"组合。</span></p></div>
-      <div class="row norm"><b><span class="en">THE LESSON</span><span class="zh">这次的教训</span></b><p><span class="en">The same impulse that builds rockets can also turn and bite him.</span><span class="zh">同一种冲动,既能成就火箭,也能反噬自己。</span></p></div>
+    <div class="decc"><div class="yr">2022</div><h5><span class="en">Impulsively buying Twitter</span><span class="zh">冲动收购推特</span></h5>
+      <div class="row"><b><span class="en">SITUATION</span><span class="zh">处境</span></b><p><span class="en">An offer on a whim; then forced to follow through.</span><span class="zh">一时兴起报价,后想反悔被迫成交。</span></p></div>
+      <div class="row"><b><span class="en">HIS CHOICE</span><span class="zh">他的选择</span></b><p><span class="en">Shouldered the $44B and slashed staff—classic "impulse + hardcore".</span><span class="zh">硬扛440亿、大刀裁员——典型"冲动+硬核"组合。</span></p></div>
+      <div class="row norm"><b><span class="en">THE LESSON</span><span class="zh">这次的教训</span></b><p><span class="en">The same impulsiveness that builds rockets can also backfire. <b>A cautionary case.</b></span><span class="zh">同一种冲动,既能成就火箭,也能反噬自己。<b>反面案例。</b></span></p></div>
     </div>
   </div>
 </div></section>
 
-<!-- 成功原因 -->
+<!-- WHY -->
 <section id="why"><div class="wrap reveal">
   <div class="kicker">PART 3</div>
   <h2 class="sec"><span class="en">Why He Succeeded</span><span class="zh">究天人之际:他为何能成</span></h2>
   <div class="tianren">
     <div class="side tian">
       <div class="sh"><span class="en">Heaven · the hand you're dealt</span><span class="zh">天 · 给定的牌</span><small><span class="en">can't be chosen — your starting point</span><span class="zh">无法选择,是你的起点</span></small></div>
-      <div class="wf t"><div class="wfh"><b><span class="en">Talent</span><span class="zh">天赋</span></b><em><span class="en">barely copyable</span><span class="zh">几乎没法复制</span></em></div><ul><li><span class="en">Possibly Asperger-like <b>extreme focus</b></span><span class="zh">可能的阿斯伯格式<b>超常专注</b></span></li><li><span class="en">A near-photographic memory</span><span class="zh">过目不忘的记忆力</span></li><li><span class="en">Powerful pattern recognition and a gift for learning</span><span class="zh">极强的模式识别与学习天分</span></li></ul></div>
-      <div class="wf f"><div class="wfh"><b><span class="en">Family</span><span class="zh">家庭</span></b><em><span class="en">partly learnable</span><span class="zh">部分可借鉴</span></em></div><ul><li><span class="en">Engineer father; a cross-disciplinary base built among piles of books</span><span class="zh">工程师父亲、书堆里长大的跨学科底子</span></li><li><span class="en">The blood of an adventurer grandfather</span><span class="zh">冒险家外祖父的血脉</span></li><li><span class="en">Resilience forged by a harsh father</span><span class="zh">严苛父亲淬炼出的抗压</span></li></ul></div>
-      <div class="wf s"><div class="wfh"><b><span class="en">Society</span><span class="zh">社会</span></b><em><span class="en">depends on the era</span><span class="zh">靠时代</span></em></div><ul><li><span class="en">Emigrated to the US, into Silicon Valley's startup soil</span><span class="zh">移民美国,进入硅谷创业土壤</span></li><li><span class="en">Rode the internet wave to a first fortune</span><span class="zh">赶上互联网浪潮,挣到第一桶金</span></li><li><span class="en">The privatization of space, EVs, and the climate wave</span><span class="zh">航天私有化、电动车与气候大潮</span></li></ul></div>
-      <div class="wf m"><div class="wfh"><b><span class="en">Luck</span><span class="zh">机遇</span></b><em><span class="en">fortune + timing</span><span class="zh">靠运气</span></em></div><ul><li><span class="en">A life-saving NASA contract; venture money and low rates buying time</span><span class="zh">NASA 救命合同、风投与低利率续命</span></li><li><span class="en">Luck at the decisive moments</span><span class="zh">关键节点上的运气</span></li><li><span class="en">Has an active side too—let the right people see you</span><span class="zh">含主动一面——让对的人看见你</span></li></ul></div>
+      <div class="wf t"><div class="wfh"><b><span class="en">Talent</span><span class="zh">天赋</span></b><em><span class="en">barely copyable</span><span class="zh">几乎没法复制</span></em></div><ul><li><span class="en">Possibly Asperger-type <b>extreme focus</b></span><span class="zh">可能的阿斯伯格式<b>超常专注</b></span></li><li><span class="en">A near-photographic memory and pattern recognition</span><span class="zh">过目不忘的记忆与模式识别</span></li><li><span class="en">Strong engineering intuition</span><span class="zh">工程直觉</span></li></ul></div>
+      <div class="wf f"><div class="wfh"><b><span class="en">Family</span><span class="zh">家庭</span></b><em><span class="en">partly learnable</span><span class="zh">部分可借鉴</span></em></div><ul><li><span class="en">An engineer father; a childhood buried in books</span><span class="zh">工程师父亲、书堆里长大</span></li><li><span class="en">An adventurer grandfather; a harsh father that forged toughness</span><span class="zh">冒险家外祖父;严父淬炼出抗压</span></li></ul></div>
+      <div class="wf s"><div class="wfh"><b><span class="en">Society</span><span class="zh">社会</span></b><em><span class="en">depends on the era</span><span class="zh">靠时代</span></em></div><ul><li><span class="en">Immigrated to the U.S. and Silicon Valley</span><span class="zh">移民美国,进入硅谷</span></li><li><span class="en">The internet wave, then privatized spaceflight + EV/climate</span><span class="zh">互联网浪潮、航天私有化、电动车与气候</span></li></ul></div>
+      <div class="wf m"><div class="wfh"><b><span class="en">Luck</span><span class="zh">机遇</span></b><em><span class="en">fortune + timing</span><span class="zh">靠运气</span></em></div><ul><li><span class="en">A NASA contract that saved SpaceX</span><span class="zh">NASA 救命合同</span></li><li><span class="en">Cheap capital and low rates; policy subsidies</span><span class="zh">风投与低利率续命、政策补贴</span></li></ul></div>
     </div>
     <div class="side ren">
       <div class="sh"><span class="en">Man · what you control</span><span class="zh">人 · 你能掌控</span><small><span class="en">decides how far you go</span><span class="zh">决定你能走多远</span></small></div>
-      <div class="wf e"><div class="wfh"><b><span class="en">Effort</span><span class="zh">努力</span></b><em><span class="en">highly copyable</span><span class="zh">高度可复制</span></em></div><ul><li><span class="en">80–100+ hours a week; slept on the factory floor through "production hell"</span><span class="zh">每周 80–100+ 小时,"生产地狱"睡工厂</span></li><li><span class="en">Hands-on; fights for every cent of cost</span><span class="zh">亲自下场,死磕每一分成本</span></li><li><span class="en">Carries several hard-tech companies at once</span><span class="zh">同时扛起多家硬科技公司</span></li></ul></div>
-      <div class="wf ch"><div class="wfh"><b><span class="en">Choices</span><span class="zh">选择</span></b><em><span class="en">the real lever</span><span class="zh">最关键的主动权</span></em></div><ul><li><span class="en">Chose to leave comfort: braved North America alone at 17</span><span class="zh">选择离开舒适区:17岁独闯北美</span></li><li><span class="en">Chose to sink his first fortune into "do-or-die" hard tech rather than retire</span><span class="zh">选择把第一桶金全押进"九死一生"的硬科技,而非退休享受</span></li><li><span class="en">Chose the long game: bet on a future ten years out, not on near-term gain</span><span class="zh">选择长期主义:赌十年后的未来,而非眼前利益</span></li></ul></div>
+      <div class="wf e"><div class="wfh"><b><span class="en">Effort</span><span class="zh">努力</span></b><em><span class="en">highly copyable</span><span class="zh">高度可复制</span></em></div><ul><li><span class="en">80–100+ hour weeks; slept on the factory floor</span><span class="zh">每周 80–100+ 小时,睡工厂</span></li><li><span class="en">Hands-on; grinds every cost down</span><span class="zh">亲自下场,死磕每一分成本</span></li><li><span class="en">Runs several hard-tech companies at once</span><span class="zh">同时扛起多家硬科技公司</span></li></ul></div>
+      <div class="wf ch"><div class="wfh"><b><span class="en">Choices</span><span class="zh">选择</span></b><em><span class="en">the real lever</span><span class="zh">最关键的主动权</span></em></div><ul><li><span class="en">Chose to leave the comfort zone (alone at 17)</span><span class="zh">选择离开舒适区:17岁独闯北美</span></li><li><span class="en">Chose to pour his first fortune into "impossible" hard tech</span><span class="zh">选择把第一桶金押进"九死一生"的硬科技</span></li><li><span class="en">Chose long-termism and self-disruption (iPhone-style, on himself)</span><span class="zh">选择长期主义、敢自我颠覆</span></li></ul></div>
     </div>
   </div>
-  <p class="whynote"><span class="en">Note: abilities like "<b>engineering intuition and systems thinking</b>" are mostly <b>built</b> through huge amounts of reading and practice—strictly they belong on the "Man" side. Talent is only the base, not the whole.</span><span class="zh">注:像"<b>工程直觉、系统思维</b>"这类能力,其实多是后天大量阅读和实践<b>练</b>出来的,严格说该归到"人"这一侧——天赋只是底子,不是全部。</span></p>
+  <p class="whynote"><span class="en">Note: his "engineering intuition" is partly innate, but also <b>built</b> by a childhood of obsessive reading and hands-on work—it sits between Heaven and Man.</span><span class="zh">注:他的"工程直觉"部分天生,但也靠童年海量阅读与亲自动手长期<b>练</b>出来——介于天与人之间。</span></p>
   <div class="truth">
-    <span class="en"><b>The hard truth:</b> talent, family, society, luck—these four "Heaven" cards mostly <b>can't be copied</b>. What you actually hold are the two "Man" cards—<span class="hl">effort and choices</span>. <b>Heaven sets the floor; you set the ceiling.</b> As for "effort vs. choice": effort decides whether you can <b>get it done</b>, choice decides whether it was <b>worth doing</b>—and he won both bets.</span>
-    <span class="zh"><b>现实很残酷:</b>天赋、家庭、社会、机遇这四张"天"牌,普通人基本<b>没法 copy</b>。你真正能握在手里的,只有"人"的两张——<span class="hl">努力与选择</span>。<b>天定起点,人定上限。</b>至于"努力 vs 选择谁更重要":努力决定你能不能把事<b>做成</b>,选择决定你做的是不是<b>值得做</b>的事——而他两样都赌赢了。</span>
+    <span class="en"><b>The hard truth:</b> talent, family, society, luck mostly <b>can't be copied</b>. What you actually hold are the two "Man" cards—<span class="hl">effort and choices</span>. <b>Heaven sets the floor; you set the ceiling.</b></span>
+    <span class="zh"><b>现实很残酷:</b>天赋、家庭、社会、机遇这四张"天"牌,基本<b>没法 copy</b>。你真正握得住的,只有"人"的两张——<span class="hl">努力与选择</span>。<b>天定起点,人定上限。</b></span>
   </div>
 </div></section>
 
-<!-- 能学什么 -->
+<!-- LEARN -->
 <section id="learn"><div class="wrap reveal">
   <div class="kicker">PART 4</div>
   <h2 class="sec"><span class="en">What We Can Learn</span><span class="zh">我们能学什么</span></h2>
   <div class="outline">
-    <div class="o1"><div class="h"><span class="tag"><span class="en">I</span><span class="zh">一</span></span><span class="en">His stated method · "The 5-Step Algorithm"</span><span class="zh">他公开的方法论 ·「算法五步」</span></div></div>
+    <div class="o1"><div class="h">▌<span class="en">His public method: "the algorithm" (5 steps)</span><span class="zh">他公开的方法论:「算法五步」</span></div></div>
     <ul class="oli">
-      <li><span class="num">1</span><span class="tx"><b><span class="en">Question every requirement.</span><span class="zh">质疑每条要求</span></b><span class="en"> Trace each rule to "who made it," then ask if it's even needed; the smarter the author, the more you should question it.</span><span class="zh"> —— 每条规定都追到"是谁定的",再问有没有必要;越是聪明人定的越要质疑。</span></span></li>
-      <li><span class="num">2</span><span class="tx"><b><span class="en">Delete what you can.</span><span class="zh">删掉能删的</span></b><span class="en"> Boldly cut parts and steps; if you don't later add back at least 10%, you didn't cut hard enough.</span><span class="zh"> —— 大胆删零件、删步骤;后来要加回至少10%,才算删得够狠。</span></span></li>
-      <li><span class="num">3</span><span class="tx"><b><span class="en">Simplify & optimize.</span><span class="zh">简化与优化</span></b><span class="en"> Delete first, then optimize—don't polish something that shouldn't exist.</span><span class="zh"> —— 先删再优化,别在不该存在的东西上精雕细琢。</span></span></li>
-      <li><span class="num">4</span><span class="tx"><b><span class="en">Accelerate cycle time.</span><span class="zh">加快节奏</span></b><span class="en"> Only after the first three steps, speed up.</span><span class="zh"> —— 前三步做完,再提速。</span></span></li>
-      <li><span class="num">5</span><span class="tx"><b><span class="en">Automate last.</span><span class="zh">最后才自动化</span></b><span class="en"> Don't automate up front—wait until requirements are clear and the bugs are out.</span><span class="zh"> —— 别一上来就自动化,等需求理清、bug 排完再说。</span></span></li>
+      <li><span class="num">1</span><span class="tx"><b><span class="en">Question every requirement.</span><span class="zh">质疑每条要求。</span></b><span class="en"> Trace each rule to a named person, then challenge it.</span><span class="zh"> 每条规定都追到"是谁定的",再质疑它。</span></span></li>
+      <li><span class="num">2</span><span class="tx"><b><span class="en">Delete what you can.</span><span class="zh">删掉能删的。</span></b><span class="en"> If you don't add 10% back, you didn't cut enough.</span><span class="zh"> 后来要加回至少10%,才算删得够狠。</span></span></li>
+      <li><span class="num">3</span><span class="tx"><b><span class="en">Simplify &amp; optimize.</span><span class="zh">简化与优化。</span></b><span class="en"> Only after deleting—don't polish what shouldn't exist.</span><span class="zh"> 先删再优化,别雕琢不该存在的东西。</span></span></li>
+      <li><span class="num">4</span><span class="tx"><b><span class="en">Accelerate cycle time.</span><span class="zh">加快节奏。</span></b><span class="en"> Speed up—but only after the first three.</span><span class="zh"> 前三步做完,再提速。</span></span></li>
+      <li><span class="num">5</span><span class="tx"><b><span class="en">Automate last.</span><span class="zh">最后才自动化。</span></b><span class="en"> Don't automate before the bugs are out.</span><span class="zh"> 别一上来就自动化。</span></span></li>
     </ul>
-
-    <div class="divr"></div>
-
-    <div class="o1"><div class="h"><span class="tag"><span class="en">II</span><span class="zh">二</span></span><span class="en">Other things worth stealing</span><span class="zh">其他可学的点</span></div></div>
-
-    <div class="osub"><span class="en">① Mindset</span><span class="zh">① 思维模式</span></div>
+    <div class="o1" style="border-top:1px solid var(--line);margin-top:6px"><div class="h">▌<span class="en">Other transferable habits</span><span class="zh">其他可学的点</span></div></div>
     <ul class="oli">
-      <li><span class="num g">1</span><span class="tx"><b><span class="en">First principles.</span><span class="zh">第一性原理</span></b><span class="en"> Reason up from bedrock facts; don't be bound by "it's always been done this way."</span><span class="zh"> —— 凡事回到最底层的事实重新推,不被"一直这样"绑架。</span></span></li>
-      <li><span class="num g">2</span><span class="tx"><b><span class="en">Long-term + work backward.</span><span class="zh">长期主义 + 倒推</span></b><span class="en"> Set an "absurdly" big goal, then back out the small step to take today.</span><span class="zh"> —— 先定一个大到"离谱"的目标,再倒推今天该做的一小步。</span></span></li>
-      <li><span class="num g">3</span><span class="tx"><b><span class="en">Cross-disciplinary transfer.</span><span class="zh">跨学科迁移</span></b><span class="en"> Carry one field's solution into another (build rockets like software).</span><span class="zh"> —— 把一个领域的解法搬到另一个领域(用造软件的思路造火箭)。</span></span></li>
-    </ul>
-
-    <div class="osub"><span class="en">② Problem-solving</span><span class="zh">② 解决问题的方法论</span></div>
-    <ul class="oli">
-      <li><span class="num g">1</span><span class="tx"><b><span class="en">Hammer on cost (the "idiot index").</span><span class="zh">死磕成本(白痴指数)</span></b><span class="en"> Ask of each part "why so expensive," down to the raw-material price.</span><span class="zh"> —— 追问每个零件"凭什么这么贵",拆到原材料价。</span></span></li>
-      <li><span class="num g">2</span><span class="tx"><b><span class="en">Fail fast, iterate.</span><span class="zh">快速试错、迭代</span></b><span class="en"> Build it, blow it up, fix it—rather than chasing one perfect shot.</span><span class="zh"> —— 先做出来、炸了再改,而不是追求一次完美。</span></span></li>
-      <li><span class="num g">3</span><span class="tx"><b><span class="en">Get hands-on with details.</span><span class="zh">亲自下场摸细节</span></b><span class="en"> Managers must know the tech and do the work, not command from slides.</span><span class="zh"> —— 管理者也要懂技术、动手干,别只在 PPT 上指挥。</span></span></li>
-    </ul>
-
-    <div class="osub"><span class="en">③ Habits</span><span class="zh">③ 行为习惯</span></div>
-    <ul class="oli">
-      <li><span class="num g">1</span><span class="tx"><b><span class="en">Total focus + long hours.</span><span class="zh">极致专注 + 长时间投入</span></b><span class="en"> Pour energy into what matters most; block out the rest.</span><span class="zh"> —— 把精力压到最重要的事上,屏蔽干扰。</span></span></li>
-      <li><span class="num g">2</span><span class="tx"><b><span class="en">Treat failure as data; debrief at once.</span><span class="zh">把失败当数据、立刻复盘</span></b><span class="en"> Ask only "what did this teach me," not self-attack.</span><span class="zh"> —— 失败只问"教会我什么",不自我攻击。</span></span></li>
-      <li><span class="num g">3</span><span class="tx"><b><span class="en">Read and self-teach constantly.</span><span class="zh">持续大量阅读、自学</span></b><span class="en"> Knowledge has no subject lines; feed your curiosity.</span><span class="zh"> —— 知识不分科目,给好奇心喂足料。</span></span></li>
+      <li><span class="num">1</span><span class="tx"><b><span class="en">First-principles thinking.</span><span class="zh">第一性原理。</span></b><span class="en"> Reason up from facts; don't be bound by "that's how it's done".</span><span class="zh"> 回到底层事实重新推,不被"一直这样"绑架。</span></span></li>
+      <li><span class="num">2</span><span class="tx"><b><span class="en">Set an "absurdly" big goal, then work backward.</span><span class="zh">定离谱大目标,再倒推。</span></b><span class="en"> A huge aim organizes your energy.</span><span class="zh"> 宏大目标会反过来组织你的能量。</span></span></li>
+      <li><span class="num">3</span><span class="tx"><b><span class="en">Treat failure as data.</span><span class="zh">把失败当数据。</span></b><span class="en"> Rockets blew up three times—he iterated, not quit.</span><span class="zh"> 火箭炸了三次,他迭代而非放弃。</span></span></li>
+      <li><span class="num">4</span><span class="tx"><b><span class="en">Get hands-on with the details.</span><span class="zh">亲自下场摸细节。</span></b><span class="en"> Managers should understand the tech, not just point at slides.</span><span class="zh"> 管理者要懂技术,别只在PPT上指挥。</span></span></li>
+      <li><span class="num">5</span><span class="tx"><b><span class="en">Extreme focus + reading.</span><span class="zh">极致专注 + 大量阅读。</span></b><span class="en"> Block everything out; feed your curiosity widely.</span><span class="zh"> 屏蔽干扰;给好奇心喂足料。</span></span></li>
     </ul>
   </div>
 </div></section>
 
-<!-- 缺点分析 -->
+<!-- FLAW -->
 <section id="flaw"><div class="wrap reveal">
   <div class="kicker">PART 5</div>
   <h2 class="sec"><span class="en">Flaws</span><span class="zh">缺点分析</span></h2>
   <div class="flaws">
-    <div class="fl"><b><span class="en">Empathy deficit</span><span class="zh">共情缺失</span></b><p><span class="en">Struggles to read others' feelings; often cold-blooded toward employees and those close to him.</span><span class="zh">难以体察他人感受,对员工和亲近的人常显冷酷无情。</span></p></div>
-    <div class="fl"><b><span class="en">"Demon mode"</span><span class="zh">"恶魔模式"</span></b><p><span class="en">Violent mood swings; when it strikes he is harsh and wounding, and everyone around is afraid.</span><span class="zh">情绪剧烈摆动,发作时严厉伤人,身边人都害怕。</span></p></div>
-    <div class="fl"><b><span class="en">Impulsive & reckless</span><span class="zh">冲动鲁莽</span></b><p><span class="en">One late-night tweet can set him on fire; the $44B Twitter buy is the magnified version.</span><span class="zh">一条深夜推文就能引火烧身;440亿收购推特就是冲动的放大版。</span></p></div>
-    <div class="fl"><b><span class="en">Mercurial</span><span class="zh">反复无常</span></b><p><span class="en">Attitudes flip on a dime; intimate relationships break one after another.</span><span class="zh">态度说变就变,亲密关系一段段破裂。</span></p></div>
-    <div class="fl"><b><span class="en">Overpromise & slip</span><span class="zh">夸大与跳票</span></b><p><span class="en">Over-optimistic on timelines and capability; promises often go unmet.</span><span class="zh">对时间表和能力过度乐观,承诺常常落空。</span></p></div>
-    <div class="fl"><b><span class="en">Drift toward conspiracy</span><span class="zh">阴谋论倾向</span></b><p><span class="en">In recent years his view of the world has grown more adversarial and conspiratorial.</span><span class="zh">近年看世界越来越趋于对抗与阴谋化。</span></p></div>
+    <div class="fl"><b><span class="en">Empathy deficit</span><span class="zh">共情缺失</span></b><p><span class="en">Hard to read others' feelings; cold, even cruel, to employees and those close to him.</span><span class="zh">难以体察他人感受,对员工和亲近的人常显冷酷无情。</span></p></div>
+    <div class="fl"><b><span class="en">"Demon mode"</span><span class="zh">"恶魔模式"</span></b><p><span class="en">Moods swing violently; in a flare he turns harsh and hurtful.</span><span class="zh">情绪剧烈摆动,发作时严厉伤人,身边人都害怕。</span></p></div>
+    <div class="fl"><b><span class="en">Impulsive &amp; reckless</span><span class="zh">冲动鲁莽</span></b><p><span class="en">A single late-night tweet can set fires; the $44B Twitter buy was impulse writ large.</span><span class="zh">一条深夜推文就能引火烧身;440亿收购推特就是冲动的放大版。</span></p></div>
+    <div class="fl"><b><span class="en">Mercurial</span><span class="zh">反复无常</span></b><p><span class="en">Attitudes flip fast; close relationships break and re-form.</span><span class="zh">态度说变就变,亲密关系一段段破裂。</span></p></div>
+    <div class="fl"><b><span class="en">Hype &amp; missed deadlines</span><span class="zh">夸大与跳票</span></b><p><span class="en">Over-optimistic on timelines; promises often slip.</span><span class="zh">对时间表和能力过度乐观,承诺常常落空。</span></p></div>
+    <div class="fl"><b><span class="en">Conspiratorial drift</span><span class="zh">阴谋论倾向</span></b><p><span class="en">In recent years, an increasingly combative, conspiratorial view of the world.</span><span class="zh">近年看世界越来越趋于对抗与阴谋化。</span></p></div>
   </div>
   <div class="real">
-    <p><span class="en">The smart stance: <b>learn his thinking and his commitment—but don't imitate his cruelty toward people or his indulgence of impulse as the "price of success."</b> Fit his strengths with the brake he most lacks—empathy, impulse control, kindness to those near you—and you can go steadier than he did.</span><span class="zh">聪明的态度是:<b>学他的思维与投入,但别把他对人的冷酷、把对冲动的放纵,当成"成功的代价"去模仿。</b>给他的优点装上他最缺的那块刹车——共情、控制冲动、善待身边的人——你能走得比他更稳。</span></p>
+    <p><span class="en">The smart move: <b>steal his focus, resilience and drive—but don't romanticize the cruelty or the impulsiveness as the "price" of greatness.</b> Add the empathy and impulse control he lacks, and you can go further than he has, with people still beside you.</span><span class="zh">聪明的态度:<b>学他的专注、韧性与驱动力,但别把那份对人的冷酷和对冲动的放纵美化成"成功的代价"。</b>补上他缺的共情与冲动控制,你能走得比他更稳,而且身边还有人。</span></p>
   </div>
 </div></section>
 
-<!-- 古典识人术 -->
+<!-- EAST -->
 <section id="read"><div class="wrap reveal">
   <div class="kicker">PART 6 · <span class="en">BONUS</span><span class="zh">番外</span></div>
   <h2 class="sec"><span class="en">An Eastern Lens on Musk</span><span class="zh">古典识人术 · 照一照马斯克</span></h2>
-  <div class="caveat"><b><span class="en">Note:</span><span class="zh">说明:</span></b><span class="en"> A playful, interpretive exercise with a large subjective element; facts come from the biography, but "reading a modern figure by ancient methods" is inevitably a matter of taste. The Bingjian contains physiognomy; we take only its idea of "weighing spirit and speech," not face-reading.</span><span class="zh"> 这是趣味性的应用,主观成分较大;事实依据来自传记,但"用古法套今人"难免见仁见智。冰鉴含相术成分,我们只取它"重精神气与谈吐"的思路,不搞看面相。</span></div>
-
-  <h3 class="o2" style="color:var(--gold);font-size:16px">▌<span class="en">Zhuge Liang's Seven Probes — seven situations to reveal the real person</span><span class="zh">诸葛亮七观法 —— 七种情境,验出真人</span></h3>
+  <div class="caveat"><b><span class="en">Note:</span><span class="zh">说明:</span></b><span class="en"> A playful, interpretive exercise—applying classical Chinese "people-reading" methods. Facts from the biography; the mapping is subjective.</span><span class="zh"> 趣味性的应用——用中国古典识人术来"套"。事实来自传记,对应见仁见智。</span></div>
+  <h3 class="o2" style="color:var(--gold);font-size:16px">▌<span class="en">Zhuge Liang's Seven Probes</span><span class="zh">诸葛亮七观法</span></h3>
   <div class="seven">
-    <div class="row"><div class="q"><b><span class="en">Aspiration 志</span><span class="zh">问之以是非 观其志</span></b><span class="en">values</span><span class="zh">看价值观</span></div><div class="a"><span class="en">Questions every fixed rule; aims at "a multi-planetary civilization"—values crystal-clear and grand.</span><span class="zh">质疑一切既定规则,志在"多星球文明"——价值观极清晰且宏大。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">Adaptability 变</span><span class="zh">穷之以辞辩 观其变</span></b><span class="en">under pressure</span><span class="zh">看应变</span></div><div class="a"><span class="en">Three rockets blown up, companies dying—still adjusts on the fly: in 2008 split the last cash across both and bet on the 4th launch.</span><span class="zh">火箭三连炸、公司濒死,仍能临场调整:2008 把最后的钱分给两家、赌第四次发射。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">Insight 识</span><span class="zh">咨之以计谋 观其识</span></b><span class="en">judgment</span><span class="zh">看见识</span></div><div class="a"><span class="en">Cross-disciplinary insight + engineering intuition; used the "idiot index" to crush rocket cost. Insight is on point.</span><span class="zh">跨学科洞察 + 工程直觉;用"白痴指数"把火箭成本砍到极致。见识在线。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">Courage 勇</span><span class="zh">告之以难 观其勇</span></b><span class="en">nerve</span><span class="zh">看胆识</span></div><div class="a"><span class="en">Again and again stakes his entire fortune, betting games others won't. Courage—maxed out.</span><span class="zh">一次次押上全部身家,赌别人不敢赌的局。勇,拉满。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">Nature 性</span><span class="zh">醉之以酒 观其性</span></b><span class="en">true self</span><span class="zh">看本性</span></div><div class="a"><span class="en">With his guard down he's still an engineering-obsessed workaholic, a bit boyish—fame and money aren't his real thrill.</span><span class="zh">卸下防备后,本性仍是痴迷工程的工作狂、带点孩子气——名利不是他的真兴奋点。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">Integrity 廉</span><span class="zh">临之以利 观其廉</span></b><span class="en">money</span><span class="zh">看对利的态度</span></div><div class="a"><span class="en">Sank nearly all his PayPal cash back into the companies, not into pleasure. Quite indifferent to money itself.</span><span class="zh">把 PayPal 套现几乎全投进公司,不为享乐。对"钱本身"相当淡。</span></div></div>
-    <div class="row"><div class="q warn"><b><span class="en">Reliability 信</span><span class="zh">期之以事 观其信</span></b><span class="en">trust</span><span class="zh">看靠谱度</span></div><div class="a"><span class="en">Double-edged: keeps faith with grand visions (EVs and reusable rockets really happened); but chronically slips on timelines (self-driving "next year" for many years).</span><span class="zh">双刃:对宏大愿景"言出必行"(电动车、可回收火箭真做成了);但对时间表常年跳票(自动驾驶"明年"喊了很多年)。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Aspiration 志</span><span class="zh">观其志</span></b></div><div class="a"><span class="en">A multiplanetary civilization—crystal clear and grand.</span><span class="zh">志在"多星球文明"——价值观极清晰且宏大。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Adaptability 变</span><span class="zh">观其变</span></b></div><div class="a"><span class="en">Three crashes and near-bankruptcy, yet adjusted on the fly—2008's split-the-money gamble.</span><span class="zh">火箭三连炸、公司濒死仍临场调整:2008分钱赌第四发。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Insight 识</span><span class="zh">观其识</span></b></div><div class="a"><span class="en">Cross-disciplinary insight + the "idiot index" that slashed rocket costs.</span><span class="zh">跨学科洞察 + "白痴指数"把火箭成本砍到极致。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Courage 勇</span><span class="zh">观其勇</span></b></div><div class="a"><span class="en">Bet his entire fortune again and again. Nerve, maxed out.</span><span class="zh">一次次押上全部身家。勇,拉满。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Nature 性</span><span class="zh">观其性</span></b></div><div class="a"><span class="en">Off-guard, still a work-obsessed, boyish engineer—fame isn't his thrill.</span><span class="zh">卸防后仍是痴迷工程、带点孩子气的工作狂——名利不是他的兴奋点。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Integrity 廉</span><span class="zh">观其廉</span></b></div><div class="a"><span class="en">Poured the PayPal money straight back into the companies; indifferent to luxury.</span><span class="zh">把PayPal套现几乎全投进公司,不为享乐。</span></div></div>
+    <div class="row"><div class="q warn"><b><span class="en">Reliability 信</span><span class="zh">观其信</span></b></div><div class="a"><span class="en">Delivers on the big vision (EVs, reusable rockets)—but his timelines slip for years. Mixed.</span><span class="zh">对宏大愿景言出必行(电动车、可回收火箭),但时间表常年跳票。守信存疑。</span></div></div>
   </div>
-
-  <h3 class="o2" style="color:var(--gold);font-size:16px;margin-top:28px">▌<span class="en">Zeng Guofan's "Bingjian" — reading spirit, demeanor, and speech</span><span class="zh">曾国藩冰鉴 —— 七篇,察神气、情态与谈吐</span></h3>
-  <div class="verse"><span class="en">Right vs. wrong shows in eyes & nose · truth vs. falsehood in the lips · fame in one's bearing · fortune in one's spirit · resolve in the hands · trouble in the sinews · and for coherence, it's all in the speech.<small>(the rhyme is traditionally ascribed to Zeng; its authenticity is disputed)</small></span><span class="zh">邪正看眼鼻 · 真假看嘴唇 · 功名看气概 · 富贵看精神 · 主意看指爪 · 风波看脚筋 · 若要看条理,全在言语中<small>(口诀相传为曾氏,真伪有争议)</small></span></div>
+  <h3 class="o2" style="color:var(--gold);font-size:16px;margin-top:24px">▌<span class="en">Zeng Guofan's "Bingjian" (spirit &amp; bearing)</span><span class="zh">曾国藩冰鉴(神气一路)</span></h3>
   <div class="seven">
-    <div class="row"><div class="q"><b><span class="en">① Spirit & frame 神骨</span><span class="zh">① 神骨</span></b><span class="en">spirit & backbone</span><span class="zh">看精神与风骨</span></div><div class="a"><span class="en">The first and core chapter: "a man's whole spirit lies in his two eyes." When focused, Musk's gaze is sharp and he enters a "trance" others can't reach—the spirit it prizes most, he has in abundance, fitting "fortune is read in the spirit."</span><span class="zh">冰鉴第一篇,也是核心:"一身精神,具乎两目"。马斯克专注时眼神锐利、能进入旁人难及的"出神"状态——它最看重的"精神",他极旺,正应"富贵看精神"。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">② Hard/Soft 刚柔</span><span class="zh">② 刚柔</span></b><span class="en">firmness & yielding</span><span class="zh">看刚气与柔劲</span></div><div class="a"><span class="en">Extremely "hard": confrontational, combative, willing to clash head-on; the soft side is almost absent, laced with emotional instability. A face of excess firmness, firm without harmony.</span><span class="zh">极"刚":对抗、好斗、敢硬碰硬;柔的一面几乎缺席,还夹着情绪化的不稳。属刚气过盛、刚而欠和之相。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">③ Bearing 容貌</span><span class="zh">③ 容貌</span></b><span class="en">overall presence</span><span class="zh">看整体气象</span></div><div class="a"><span class="en">Unkempt yet commanding—the impression of a mind wholly on the work, not on appearance. (Pure looks are subjective; kept brief here.)</span><span class="zh">不修边幅却气场逼人,给人"心思全在事上、不在皮相"的印象。(纯相貌主观成分大,这里从略)</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">④ Demeanor 情态</span><span class="zh">④ 情态</span></b><span class="en">dynamic expression</span><span class="zh">看动态神情</span></div><div class="a"><span class="en">Bingjian says "watch the spirit over time, the demeanor at first glance." His demeanor swings violently between light and dark—the so-called "demon mode," overpowering on first contact.</span><span class="zh">冰鉴讲"久注观人精神,乍见观人情态"。他的情态在明暗间剧烈摆动——即所谓"恶魔模式",乍见之下极具压迫感。</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">⑤ Brow & beard 须眉</span><span class="zh">⑤ 须眉</span></b><span class="en">manly vigor</span><span class="zh">看眉宇英气</span></div><div class="a"><span class="en">"A man of brow and beard" means masculine vigor. The drive and unwillingness to lose in his brow corroborate the "courage" the Seven Probes found. (Body-reading kept brief.)</span><span class="zh">"须眉男子"指阳刚气概。他眉宇间那股进取、不服输,与七观法测出的"勇"相互印证。(体相部分从略)</span></div></div>
-    <div class="row"><div class="q"><b><span class="en">⑥ Voice 声音</span><span class="zh">⑥ 声音</span></b><span class="en">listen for the qi</span><span class="zh">听声辨气</span></div><div class="a"><span class="en">"Voice asserts—found where it issues; tone gathers—found where it rests." He speaks unhurriedly, sometimes hesitant, yet on technology his footing is total—voice issues from qi, and full qi yields settled conviction.</span><span class="zh">"声主张,寻发处见;音主敛,寻歇处见"。他语速不快、偶有迟疑,可一谈技术便底气十足——声由气出,气足则言有定见。</span></div></div>
-    <div class="row"><div class="q warn"><b><span class="en">⑦ Complexion 气色</span><span class="zh">⑦ 气色</span></b><span class="en">present fortune</span><span class="zh">看当下气运</span></div><div class="a"><span class="en">This chapter reads phase-by-phase fortune, shifting with person and time—hard to settle from a book. Left open.</span><span class="zh">这一篇看的是阶段性运势,因人因时而变,难从书本定论——存而不论。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Spirit 神</span><span class="zh">神</span></b></div><div class="a"><span class="en">Can enter a piercing "trance" of focus—immense mental force.</span><span class="zh">专注时进入"出神"状态,眼神锐利,精神力惊人。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Hard/Soft 刚柔</span><span class="zh">刚柔</span></b></div><div class="a"><span class="en">Extremely "hard"—combative and explosive.</span><span class="zh">极"刚":对抗、暴烈。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Demeanor 情态</span><span class="zh">情态</span></b></div><div class="a"><span class="en">Swings violently between light and dark—"demon mode".</span><span class="zh">明暗剧烈摆动,即所谓"恶魔模式"。</span></div></div>
+    <div class="row"><div class="q"><b><span class="en">Voice &amp; speech 声音言语</span><span class="zh">声音 / 言语</span></b></div><div class="a"><span class="en">Direct, high-density—but easily carried off by impulse (the reality distortion field).</span><span class="zh">表达直接、信息密度高,但常被冲动带偏(现实扭曲力场)。</span></div></div>
   </div>
-  <p class="sub" style="margin-top:16px;font-size:13.5px"><span class="en">Both methods converge: <b style="color:var(--gold)">don't trust fine words; test a person in situations and in spirit</b>. The Seven Probes find his aspiration, courage, insight, and integrity all strong, with "virtue/toward people" and "reliability/timing" as the soft spots; the Bingjian sees him as "<b style="color:var(--gold)">spirit-rich, firmness-heavy, demeanor-fierce</b>"—a man of extraordinary energy and edge, but short on calm.</span><span class="zh">两家殊途同归:<b style="color:var(--gold)">不听漂亮话,在情境与神气中验人</b>。七观法看出他志、勇、识、廉俱强,唯"德/对人"与"信/守时"是软肋;冰鉴则照见他"<b style="color:var(--gold)">精神旺、刚气盛、情态烈</b>"——一个精力与锋芒都过人、却失于平和的人。</span></p>
+  <p class="whynote"><span class="en">Both methods converge: aspiration, courage, insight and integrity all strong; "reliability" (timelines) and "virtue toward people" are the soft spots—echoing the Western read.</span><span class="zh">两家殊途同归:志、勇、识、廉俱强;唯"信(守时)"与"对人之德"是软肋——与西方框架结论呼应。</span></p>
 </div></section>
 
 <footer>
   <p><b><span class="en">Source:</span><span class="zh">资料来源:</span></b> Walter Isaacson, <i>Elon Musk</i> (2023)</p>
-  <p><span class="en">Big-Five radar & "copyability" are illustrative from the biography, not measured; MBTI is for reference; the Eastern lens is a playful application.</span><span class="zh">大五雷达与"可复制性"为基于传记的示意,非量表实测;MBTI 仅作通俗参考;古典识人术为趣味性应用。</span></p>
+  <p><span class="en">Big-Five radar &amp; "copyability" are illustrative, not measured; MBTI is for reference; the Eastern lens is a playful application.</span><span class="zh">大五雷达与"可复制性"为示意,非实测;MBTI 仅供参考;古典识人术为趣味应用。</span></p>
 </footer></div>
-
 
 <script>
 const radarData={"fan":[80,92,60,82,35],"su":[98,70,80,85,28],"wang":[92,85,68,62,32],"zeng":[60,97,45,52,55],"mao":[88,68,72,18,60],"deng":[65,88,48,40,22],"franklin":[92,88,78,72,25],"lincoln":[80,82,60,80,65],"einstein":[99,72,45,55,35],"jobs":[97,80,60,10,75],"musk":[98,82,55,15,80]};
@@ -2671,15 +2620,11 @@ function showHome(){
 function setLang(l){curLang=l;document.body.className='lang-'+l;
   document.getElementById('bEn').classList.toggle('on',l==='en');
   document.getElementById('bZh').classList.toggle('on',l==='zh');
-  document.documentElement.lang=(l==='zh'?'zh-CN':'en');
-  if(curP) drawRadar(curP,l);
+  document.documentElement.lang=(l==='zh'?'zh-CN':'en'); if(curP) drawRadar(curP,l);
 }
-// stars in every hero/cover
 document.querySelectorAll('.stars').forEach(box=>{
   for(let i=0;i<50;i++){const d=document.createElement('div');d.className='star';const sz=Math.random()*2+1;
     d.style.width=d.style.height=sz+'px';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';
     d.style.animationDelay=Math.random()*4+'s';d.style.opacity=.5;box.appendChild(d);}
 });
-</script>
-</body>
-</html>
+</script></body></html>
